@@ -1,0 +1,516 @@
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+  
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+/* src/App.css */
+
+/* General Navbar Styling */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+span{
+  color:rgb(238, 20, 20);
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+/* Navbar Authentication Buttons */
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-btn {
+  color: #fff;
+  background-color: #007bff;
+  padding: 8px 16px;
+  margin-left: 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Hamburger Icon for Mobile */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-auth {
+    display: none; /* Hide auth buttons on mobile */
+  }
+}
+
+
+
+/* src/Footer.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links,
+.footer-social {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links,
+  .footer-social {
+    margin: 10px 0;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    margin: 5px 0;
+  }
+}
+
+
+
+
+ /* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4caf50;
+  background-color: #e8f5e8;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #4caf50;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+
+
+
+/* Dashboard */
+
+
+/* Dashboard Styles */
+.user-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dashboard-actions button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-actions button:hover {
+  background-color: #45a049;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .dashboard-actions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} 
+
+
+
+/* Dashboard */
+/* Container for the cards */
+
+/* Individual card styling */
+/* src/components/Dashboard.css */
+
+/* Container for the entire Dashboard */
+.dashboard-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading style for the dashboard */
+.dashboard-heading {
+  margin-top:60px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ca0404;
+}
+
+/* Flexbox container for the cards */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds space between cards */
+  padding: 20px;
+}
+
+/* Individual card style */
+.dashboard-card {
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px; /* Space between the rows of cards */
+}
+
+/* Image inside the card */
+.dashboard-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card information (title, category, and button) */
+.dashboard-card-info {
+  padding: 15px;
+}
+
+/* Category text */
+.dashboard-card-category {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+/* Title of the card */
+.dashboard-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Watch Now button inside the card */
+.dashboard-card-btn {
+  padding: 10px 20px;
+  background-color: #c24a50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on the button */
+.dashboard-card-btn:hover {
+  background-color: #b20710;
+}
+
+/* Hover effect for the card */
+.dashboard-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly */
+}
+
+
+
+
+
+
+
+/* Home */
+
+/* src/components/Home.css */
+/* src/components/Home.css */
+
+/* Full page container for the Home page */
+/* src/components/Home.css */
+
+/* Full page container for the Home page */
+
+body{
+  background-color: #282c34;
+}
+.home-container {
+  text-align: center;
+  padding: 100px 20px; /* Added padding on the top and bottom */
+  background-color: #282c34; /* Solid background color */
+  background-size: cover; /* If you want to use an image, this ensures the image covers the full page */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* White text color for readability */
+  position: relative; /* To position the overlay */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Overlay to darken the background image and make text stand out */
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  z-index: -1; /* Make sure overlay is behind the text */
+}
+
+/* Title for the home page */
+.home-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top:250px;
+  /* margin-bottom: 20px; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow for readability */
+}
+
+/* Description text under the title */
+.home-description {
+  font-size: 1.5rem;
+  color: rgb(228, 65, 65); 
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Adds shadow for readability */
+}
