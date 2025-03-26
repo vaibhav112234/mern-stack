@@ -67,28 +67,28 @@ const Dashboard = () => {
           link="https://www.netflix.com/in/title/81265803"
         />
         <Card
-          imgsrc="https://i.ytimg.com/vi/5Dmr5rktfGY/maxresdefault.jpg"
+          imgsrc="https://resizing.flixster.com/zXoMucJkNwEo_FlloB4kxz5FznY=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26496121_v_h9_ad.jpg"
           title="A Netflix Original Series"
-          sname="IC 814: The  Hijack"
-          link="https://www.netflix.com/in/title/81265803"
+          sname="TAROT"
+          link="https://www.netflix.com/in/title/81691511"
         />
         <Card
-          imgsrc="https://i.ytimg.com/vi/5Dmr5rktfGY/maxresdefault.jpg"
-          title="A Netflix Original Series"
-          sname="IC 814: The  Hijack"
-          link="https://www.netflix.com/in/title/81265803"
+          imgsrc="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfMc17dkc083jOcJk5enmdkwe13jT44KseQTf_jOpS-jkpytj6jwFDCa19ssxwez_NA_2ghlBUryvay4soNtEdC57I06dLd0a8Gn.jpg?r=b0d"
+             title="A Netflix Original Series"
+          sname="Little Siberia"
+          link="https://www.netflix.com/in/title/81284727"
         />
         <Card
-          imgsrc="https://i.ytimg.com/vi/5Dmr5rktfGY/maxresdefault.jpg"
+          imgsrc="https://occ-0-8407-114.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcm6z7BqlbjmEorUD8qss6FC-C0sshabW8dLhb62tOKezZZsOZj27Gf7OT0ccrY1uI0zNv9cbS-ggIM0HjNBwrwT0pPvCo-YXrRg.jpg?r=327"
           title="A Netflix Original Series"
-          sname="IC 814:  Hijack"
-          link="https://www.netflix.com/in/title/81265803"
+          sname="OPPENHEIMER"
+          link="https://www.netflix.com/in/title/81602830"
         />
         <Card
-          imgsrc="https://i.ytimg.com/vi/5Dmr5rktfGY/maxresdefault.jpg"
+          imgsrc="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABebezp-y4p8IgAJL8DGyXzq1ZYUyn0VRWJ6nvV-u6kj136IolDbXFGAriWs71WakAMYDYgSpzcr7hKmjr9_TxmZcavCa-LoRsW6V.jpg?r=fce"
           title="A Netflix Original Series"
-          sname="IC 814: The Hijack"
-          link="https://www.netflix.com/in/title/81265803"
+          sname="Bhool Bhulaiyaa 3"
+          link="https://www.netflix.com/in/title/81686134"
         />
       </div>
     </div>
